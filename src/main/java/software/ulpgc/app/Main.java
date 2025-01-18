@@ -18,7 +18,7 @@ public class Main {
     }
     private static Image image() {
         String username = System.getProperty("user.home");
-        String picturesPath = Paths.get(username, "Imágenes").toString();
+        String picturesPath = Paths.get(username, "Pictures").toString();
         return new FileImageLoader(new File(picturesPath)).load();
     }
 }
